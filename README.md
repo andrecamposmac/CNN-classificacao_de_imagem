@@ -2,7 +2,7 @@
 
 Este projeto consiste em um notebook Jupyter que implementa uma Rede Neural Convolucional (CNN) para classificar imagens de células em duas categorias: **Infectadas (Parasitized)** e **Não Infectadas (Uninfected)**. O objetivo é criar uma ferramenta capaz de auxiliar na detecção da malária através da análise de imagens microscópicas.
 
-## 📋 Descrição
+## Descrição
 
 O código realiza todo o pipeline de um projeto de visão computacional:
 1.  **Análise Exploratória:** Carregamento e visualização das imagens e suas dimensões.
@@ -13,7 +13,7 @@ O código realiza todo o pipeline de um projeto de visão computacional:
 6.  **Avaliação:** Geração de métricas de desempenho (Relatório de Classificação e Matriz de Confusão).
 7.  **Predição:** Teste do modelo com uma imagem individual.
 
-## 📂 Dataset
+## Dataset
 
 Os dados utilizados foram obtidos do repositório oficial de datasets de malária do NIH (National Library of Medicine):
 *   **Fonte:** https://ceb.nlm.nih.gov/repositories/malaria-datasets
@@ -35,7 +35,7 @@ Para executar este notebook, certifique-se de ter as bibliotecas instaladas:
 pip install tensorflow pandas numpy matplotlib seaborn scikit-learn
 ```
 
-## 🧠 Arquitetura do Modelo
+## Arquitetura do Modelo
 
 A rede neural construída segue uma arquitetura sequencial clássica:
 
@@ -52,7 +52,7 @@ A rede neural construída segue uma arquitetura sequencial clássica:
 *   **Função de Perda:** Binary Crossentropy
 *   **Métrica:** Acurácia
 
-## 🚀 Como Executar
+## Como Executar
 
 1.  Baixe o dataset e organize os diretórios conforme esperado pelo script (`train_path` e `test_path`).
 2.  Abra o notebook `CNN-Classificacao_de_imagem_malaria.ipynb` no Jupyter Notebook, JupyterLab ou Google Colab.
@@ -62,7 +62,7 @@ A rede neural construída segue uma arquitetura sequencial clássica:
     ```
 4.  Execute as células sequencialmente para treinar e avaliar o modelo.
 
-## 📊 Resultados
+## Resultados
 
 O notebook ao final exibe:
 *   Gráficos de perda (loss) e acurácia durante o treinamento.
