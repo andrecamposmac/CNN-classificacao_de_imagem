@@ -70,4 +70,3 @@ O notebook ao final exibe:
 *   Um relatório de classificação com precisão, recall e f1-score.
 
 ---
-**Autor:** André Campos Machado
