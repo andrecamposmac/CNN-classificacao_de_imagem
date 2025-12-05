@@ -1,0 +1,89 @@
+Malaria Image Classification with CNN
+This project consists of a Jupyter notebook that implements a Convolutional Neural Network (CNN) to classify cell images into two categories: Infected (Parasitized) and Uninfected. The goal is to create a tool capable of assisting in malaria detection through microscopic image analysis.​
+
+Description
+The code performs the entire computer vision project pipeline:
+
+Exploratory Analysis: Loading and visualizing images and their dimensions.
+
+Preprocessing: Organizing directories and resizing images to (130, 130, 3).
+
+Data Augmentation: Using ImageDataGenerator to increase training data variability (rotation, zoom, flip, etc.).
+
+Model Construction: Defining a sequential CNN architecture.
+
+Training: Training the model with Early Stopping to avoid overfitting.
+
+Evaluation: Generating performance metrics (Classification Report and Confusion Matrix).
+
+Prediction: Testing the model with an individual image.​
+
+Dataset
+The data used was obtained from the official NIH (National Library of Medicine) malaria datasets repository:
+
+Source: https://ceb.nlm.nih.gov/repositories/malaria-datasets
+
+Structure: The notebook expects data organized in train and test folders, separated by class (parasitized and uninfected).​
+
+🛠 Technologies and Libraries
+The project was developed in Python using the following main libraries:
+
+TensorFlow/Keras: For building and training the neural network.
+
+NumPy & Pandas: Numerical data manipulation.
+
+Matplotlib & Seaborn: Data and image visualization.
+
+Scikit-learn: Evaluation metrics (classification_report, confusion_matrix).​
+
+Prerequisites
+To run this notebook, ensure the libraries are installed:
+
+bash
+pip install tensorflow pandas numpy matplotlib seaborn scikit-learn
+Model Architecture
+The built neural network follows a classic sequential architecture:
+
+Convolutional Layer 1: 32 filters, kernel (3,3), ReLU activation + Max Pooling (2,2).
+
+Convolutional Layer 2: 64 filters, kernel (3,3), ReLU activation + Max Pooling (2,2).
+
+Convolutional Layer 3: 64 filters, kernel (3,3), ReLU activation + Max Pooling (2,2).
+
+Flatten: Flattening of feature maps.
+
+Dense Layer (Fully Connected): 128 neurons, ReLU activation.
+
+Dropout: Rate of 0.5 (for regularization).
+
+Output Layer: 1 neuron, Sigmoid activation (binary classification).​
+
+Compilation:
+
+Optimizer: Adam
+
+Loss Function: Binary Crossentropy
+
+Metric: Accuracy​
+
+How to Run
+Download the dataset and organize the directories as expected by the script (train_path and test_path).
+
+Open the notebook CNN-Classificacao_de_imagem_malaria.ipynb in Jupyter Notebook, JupyterLab, or Google Colab.
+
+Adjust the data directory paths in the corresponding cell:
+
+python
+my_data_dir = 'path/to/your/directory'
+Execute the cells sequentially to train and evaluate the model.​
+
+Results
+The notebook at the end displays:
+
+Loss and accuracy graphs during training.
+
+A confusion matrix comparing predictions with actual values.
+
+A classification report with precision, recall, and f1-score.​
+
+Author: André Campos Machado​
