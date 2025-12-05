@@ -85,5 +85,3 @@ Loss and accuracy graphs during training.
 A confusion matrix comparing predictions with actual values.
 
 A classification report with precision, recall, and f1-score.​
-
-Author: André Campos Machado​
