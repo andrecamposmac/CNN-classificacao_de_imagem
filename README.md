@@ -19,7 +19,7 @@ Os dados utilizados foram obtidos do repositório oficial de datasets de malári
 *   **Fonte:** https://ceb.nlm.nih.gov/repositories/malaria-datasets
 *   **Estrutura:** O notebook espera que os dados estejam organizados em pastas de treino e teste, separadas por classe (`parasitized` e `uninfected`).
 
-## 🛠 Tecnologias e Bibliotecas
+## Tecnologias e Bibliotecas
 
 O projeto foi desenvolvido em Python utilizando as seguintes bibliotecas principais:
 
