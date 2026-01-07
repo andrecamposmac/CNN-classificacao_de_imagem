@@ -69,4 +69,6 @@ O notebook ao final exibe:
 *   Uma matriz de confusão comparando as predições com os valores reais.
 *   Um relatório de classificação com precisão, recall e f1-score.
 
+## Fonte:
+Este notebook é uma adaptação de um dos exercícios do curso "Complete Tensorflow 2 and Keras Deep Learning Bootcamp" (disponível na Udemy) com autoria de Jose Portilla (Perian Training).
 ---
